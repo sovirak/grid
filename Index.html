@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #maindiv {
+        background-color: red;
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        padding: 8px;
+      }
+      .cardrapper {
+        padding: 8px;
+        /* width: 25%; */
+        width: calc(25% - 16px);
+      }
+      .card {
+        background-color: darkorange;
+        height: 208px;
+        border-radius: 10%;
+        overflow: hidden;
+      }
+
+      .flages {
+        height: 208px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="maindiv">
+      <div class="cardrapper">
+        <div class="card">
+          <img src="./Flages/cambodia.webp" alt="cambodia" class="flages" />
+        </div>
+      </div>
+      <div class="cardrapper">
+        <!--image width=100% of container width(card) to make iamge responsive-->
+        <div class="card">
+          <img src="./Flages/Eng.webp" alt="English" class="flages" />
+        </div>
+      </div>
+      <div class="cardrapper">
+        <div class="card">
+          <img src="./Flages/china.webp" alt="china" class="flages" />
+        </div>
+      </div>
+      <div class="cardrapper">
+        <div class="card">
+          <img src="./Flages/skorea.webp" alt="south korea" class="flages" />
+        </div>
+      </div>
+      <div class="cardrapper">
+        <div class="card">
+          <img src="./Flages/japan.webp" alt="Japan" class="flages" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
